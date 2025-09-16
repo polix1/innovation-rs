@@ -1,0 +1,422 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Bahij_TheSansArabic'; 
+  src: url('assets/Fonts/Bahij_TheSansArabic/Bahij_TheSansArabic-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bahij_TheSansArabic'; 
+  src: url('assets/Fonts/Bahij_TheSansArabic/Bahij_TheSansArabic-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bahij_TheSansArabic'; 
+  src: url('assets/Fonts/Bahij_TheSansArabic/Bahij_TheSansArabic-ExtraBold.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bahij_TheSansArabic'; 
+  src: url('assets/Fonts/Bahij_TheSansArabic/Bahij_TheSansArabic-Light.ttf') format('truetype');
+  font-weight: light;
+  font-style: normal;
+}
+
+
+
+
+body, html {
+  font-family: 'Bahij_TheSansArabic', sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  color: white;
+}
+
+/* Hero Section */
+.header {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo h3{
+  margin-left: 10px;
+  font-weight: bolder;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff477e;
+}
+
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.header-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  background: #ff477e;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e33d6d;
+}
+
+.Call-Button{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.Call-Button img{
+  height: 60px;
+}
+
+.Services{
+  margin: 50px 40px;
+  display: flex;
+  flex-direction: column;   /* stack children vertically */
+  align-items: center;      /* center them horizontally */
+}
+
+.Services h2{
+  margin-top: 50px ;
+  font-family: 'Bahij_TheSansArabic', sans-serif;
+  font-weight: bolder;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3e3552;
+}
+
+.Services p{
+  font-family: 'Bahij_TheSansArabic', sans-serif;
+  font-weight: light;
+  color: #3e3552;
+}
+
+.Services h2 span{
+  color: #e37620
+}
+
+.Services p{
+  text-align: center;
+}
+
+.Box-Container{
+  display: flex;
+}
+
+.Box{
+  position: relative;
+  flex: 1;
+  max-width: 270px;
+  min-width: 270px;
+  min-height: 290px;
+  margin: 50px 15px;
+  background: #3e3552;
+  border-radius: 25px;
+  overflow: hidden;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+
+  padding: 25px 23px;
+}
+
+.Box::before{
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(0deg, #d83f63, #3e3552);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.Box * {
+  position: relative;
+  z-index: 1;
+}
+
+.Box:hover::before{
+  opacity: 1;
+}
+
+.Box h3{
+    font-family: 'Bahij_TheSansArabic', sans-serif;
+    font-weight: bolder;
+    color: white;
+    margin: 1px;
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.Box p{
+  color: white;
+}
+
+.Box button{
+  background: transparent;
+  color: white;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  transition: all 0.4s ease;
+}
+
+.Box:hover button{
+  cursor: pointer;
+  background: white;
+  color: #d83f63;
+}
+
+.Statistics{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 90px 40px;
+
+}
+
+.Statistics h2{
+  color: #3E3552;
+  margin-bottom: 40px;
+}
+
+.Statistics span{
+  color: #00909B;
+}
+
+.Statistics-Card-Container{
+  display: flex;
+}
+
+.Statistics-Card{
+  background: linear-gradient(#EFF0F0 95%, #00909B 5%);
+  width: 250px;
+  height: 250px;
+  display: flex;flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 10px;
+  background-color: #EFF0F0;
+  padding: 20px;
+  margin: 50px 25px;
+  text-align: start;
+}
+
+.count{
+  font-weight: bolder;
+  color: #00909b;
+  font-size: 56px;
+  line-height: 48px;
+}
+
+.Statistics-Card h2{
+  font-size: 56px;
+  color: #00909B;
+  line-height: 50px;
+}
+
+.Statistics-Card p{
+  font-weight: bolder;
+  font-size: 24px;
+  height: 62px;
+  margin-bottom: 0px;
+  color: #3E3552;
+}
+
+footer{
+  background-color: #3e383f;
+}
+
+.f-Container{
+  margin: 0px 30px;
+}
+
+.learnmore button{
+  margin-top: 20px;
+  background: #ff477e;
+  color: white;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 9px;
+  padding: 15px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  font-family: 'Bahij_TheSansArabic', sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+
+  transition: all 0.4s ease;
+}
+
+.learnmore:hover button{
+  background: #e33d6d;
+}
+
+.Workatinnovation{
+  background-color: #3e3552;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 100px 50px;
+}
+
+.Workatinnovation img{
+  height: 500px;
+}
+
+.Workatinnovation h2{
+  padding-bottom: 20px;
+  font-size: 40px;
+  line-height: 110%;
+}
+
+.Workatinnovation h3{
+  padding-bottom: 20px;
+}
+
+.Workatinnovation button{
+  margin-top: 20px;
+  background: #ff477e;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  padding: 15px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  font-family: 'Bahij_TheSansArabic', sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+
+  transition: all 0.4s ease;
+}
+
+.Workatinnovation button:hover{
+  background: #e33d6d;
+}
+
+.ftop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 70px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.ftopButtons{
+  display: flex;
+  gap: 20px;
+}
+
+.ftop span{
+  font-family: 'Bahij_TheSansArabic', sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
