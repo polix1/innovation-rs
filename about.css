@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Bahij_TheSansArabic'; 
+  src: url('assets/Fonts/Bahij_TheSansArabic/Bahij_TheSansArabic-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bahij_TheSansArabic'; 
+  src: url('assets/Fonts/Bahij_TheSansArabic/Bahij_TheSansArabic-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bahij_TheSansArabic'; 
+  src: url('assets/Fonts/Bahij_TheSansArabic/Bahij_TheSansArabic-ExtraBold.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bahij_TheSansArabic'; 
+  src: url('assets/Fonts/Bahij_TheSansArabic/Bahij_TheSansArabic-Light.ttf') format('truetype');
+  font-weight: light;
+  font-style: normal;
+}
+
+body, html {
+  font-family: 'Bahij_TheSansArabic', sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  color: white;
+}
+
+.header{
+    background-color: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 80px;
+}
+
+.logo h3{
+    margin-left: 10px;
+    font-weight: bolder;
+    color: #3e3457;
+}
+
+.nav-links{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #3e3552;
+    font-weight: bold;
+}
+
+.About-Sec{
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+}
+
+.About-Content{
+    flex: 1;
+    width: 50%;
+    background-color: #3e3457;
+    padding: 60px;
+    padding-right: 100px;
+    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.About-Content h1{
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+}
+
+.About-Content span{
+    font-weight: bold;
+    color: #f5c9bf;
+}
+
+.About-Content p{
+    color: white;
+    font-weight: bold;
+}
+
+.About-Image{
+    width: 50%;
+    background: url(assets/photos/peopleoffice.jpg) center/cover no-repeat;
+}
+
+.About-Card{
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+    align-items: center;
+    padding: 120px;
+    gap: 25px;
+}
+
+.About-Card-Image{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.About-Card-Image img{
+    max-width: 80%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.About-Card-Content{
+    width: 50%;
+}
+
+.About-Card-Content h2{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #3e3457;
+}
+
+
+
+.About-Card-Content span{
+    font-weight: bolder;
+    color: #e37620;
+}
+
+.About-Card-Content p{
+    color: #3e3457;
+    font-weight: bold;
+}
+
+.btn{
+    background-color: #d83f63;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 15px 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #892e3c;
+}
+
+.second{
+    background-color: #eff0f0;
+}
+
+footer{
+  background-color: #3e383f;
+}
+
+.f-Container{
+  margin: 0px 30px;
+}
+
+.ftop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 70px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.ftopButtons{
+  display: flex;
+  gap: 20px;
+}
+
+.ftop span{
+  font-family: 'Bahij_TheSansArabic', sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
